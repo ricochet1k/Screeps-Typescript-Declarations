@@ -1730,6 +1730,7 @@ declare class Spawn extends OwnedStructure {
      */
     recycleCreep(target: Creep): number;
     /**
+     * @deprecated
      * Transfer the energy from the spawn to a creep.
      * @param target The creep object which energy should be transferred to.
      * @param amount The amount of energy to be transferred. If omitted, all the remaining amount of energy will be used.
@@ -1836,6 +1837,7 @@ declare class StructureExtension extends OwnedStructure {
      */
     energyCapacity: number;
     /**
+     * @deprecated
      * Transfer the energy from the extension to a creep.
      * @param target The creep object which energy should be transferred to.
      * @param amount The amount of energy to be transferred. If omitted, all the remaining amount of energy will be used.
@@ -1929,6 +1931,7 @@ declare class StructurePowerSpawn extends OwnedStructure {
      */
     processPower(): number;
     /**
+     * @deprecated
      * Transfer the energy from this structure to a creep.
      * @param target The creep object which energy should be transferred to.
      * @param amount The amount of energy to be transferred. If omitted, all the remaining amount of energy will be used.
@@ -1985,7 +1988,8 @@ declare class StructureStorage extends OwnedStructure {
      */
     transfer(target: Creep, resourceType: string, amount?: number): number;
     /**
-     * An alias for storage.transfer(target, RESOURCE_ENERGY, amount). This method is deprecated.
+     * @deprecated
+     * An alias for storage.transfer(target, RESOURCE_ENERGY, amount).
      * @param target The target object.
      * @param amount The amount of resources to be transferred. If omitted, all the available amount is used.
      * @deprecated
@@ -2022,7 +2026,7 @@ declare class StructureTower extends OwnedStructure {
      */
     repair(target: Spawn | Structure): number;
     /**
-     *
+     * @deprecated
      * @param target The creep object which energy should be transferred to.
      * @param amount The amount of energy to be transferred. If omitted, all the remaining amount of energy will be used.
      */
