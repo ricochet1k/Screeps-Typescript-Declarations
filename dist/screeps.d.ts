@@ -331,7 +331,7 @@ declare var ORDER_BUY: string;
  */
 declare class ConstructionSite extends RoomObject {
     /**
-     * A unique object identificator. You can use Game.getObjectById method to retrieve an object instance by its id.
+     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
      */
     id: string;
     /**
@@ -412,7 +412,7 @@ declare class Creep extends RoomObject {
      */
     hitsMax: number;
     /**
-     * A unique object identificator. You can use Game.getObjectById method to retrieve an object instance by its id.
+     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
      */
     id: string;
     /**
@@ -697,7 +697,7 @@ interface Game {
     time: number;
     /**
      * Get an object with the specified unique ID. It may be a game object of any type. Only objects from the rooms which are visible to you can be accessed.
-     * @param id The unique identificator.
+     * @param id The unique identifier.
      * @returns an object instance or null if it cannot be found.
      */
     getObjectById<T>(id: string): T | null;
@@ -1068,7 +1068,7 @@ interface Mineral extends RoomObject {
      */
     mineralType: string;
     /**
-     * A unique object identificator. You can use Game.getObjectById method to retrieve an object instance by its id.
+     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
      */
     id: string;
     /**
@@ -1081,7 +1081,7 @@ interface Mineral extends RoomObject {
  */
 declare class Nuke extends RoomObject {
     /**
-     * A unique object identificator. You can use Game.getObjectById method to retrieve an object instance by its id.
+     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
      */
     id: string;
     /**
@@ -1262,7 +1262,7 @@ declare class Resource extends RoomObject {
      */
     amount: number;
     /**
-     * A unique object identificator. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
+     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
      */
     id: string;
     /**
@@ -1647,7 +1647,7 @@ declare class Source extends RoomObject {
      */
     energyCapacity: number;
     /**
-     * A unique object identificator. You can use Game.getObjectById method to retrieve an object instance by its id.
+     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
      */
     id: string;
     /**
@@ -1676,7 +1676,7 @@ declare class Spawn extends OwnedStructure {
      */
     hitsMax: number;
     /**
-     * A unique object identificator. You can use Game.getObjectById method to retrieve an object instance by its id.
+     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
      */
     id: string;
     /**
@@ -1783,7 +1783,7 @@ declare class Structure extends RoomObject {
      */
     hitsMax: number;
     /**
-     * A unique object identificator. You can use Game.getObjectById method to retrieve an object instance by its id.
+     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
      */
     id: string;
     /**
