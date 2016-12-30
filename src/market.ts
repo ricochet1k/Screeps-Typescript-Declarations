@@ -44,6 +44,12 @@ declare class Market {
      * Get other players' orders currently active on the market.
      */
     getAllOrders(filter?: OrderFilter | ((o: Order) => boolean)): Order[];
+    /**
+     * Retrieve info for specific market order.
+     * @param orderId The order ID
+     * @returns An object with the order info. See getAllOrders for properties explanation.
+     */
+    getOrderById(orderId: string): Order;
 }
 
 interface Transaction {

@@ -998,6 +998,12 @@ declare class Market {
      * Get other players' orders currently active on the market.
      */
     getAllOrders(filter?: OrderFilter | ((o: Order) => boolean)): Order[];
+    /**
+     * Retrieve info for specific market order.
+     * @param orderId The order ID
+     * @returns An object with the order info. See getAllOrders for properties explanation.
+     */
+    getOrderById(orderId: string): Order;
 }
 interface Transaction {
     transactionId: string;
@@ -2101,7 +2107,7 @@ declare class StructureTerminal extends OwnedStructure {
     /**
      * An object with the storage contents. Each object key is one of the RESOURCE_* constants, values are resources amounts.
      */
-    store: any;
+    store: StoreDefinition;
     /**
      * The total amount of resources the storage can contain.
      */
@@ -2130,7 +2136,7 @@ declare class StructureContainer extends Structure {
      * An object with the structure contents. Each object key is one of the RESOURCE_* constants, values are resources
      * amounts. Use _.sum(structure.store) to get the total amount of contents
      */
-    store: any;
+    store: StoreDefinition;
     /**
      * The total amount of resources the structure can contain.
      */
