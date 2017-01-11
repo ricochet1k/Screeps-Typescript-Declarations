@@ -1045,17 +1045,25 @@ interface OrderFilter {
 interface Memory {
     [name: string]: any;
     creeps: {
-        [name: string]: any;
+        [name: string]: MCreep;
     };
     flags: {
-        [name: string]: any;
+        [name: string]: MFlag;
     };
     rooms: {
-        [name: string]: any;
+        [name: string]: MRoom;
     };
     spawns: {
-        [name: string]: any;
+        [name: string]: MSpawn;
     };
+}
+interface MCreep {
+}
+interface MFlag {
+}
+interface MRoom {
+}
+interface MSpawn {
 }
 /**
  * A mineral deposit object. Can be harvested by creeps with a WORK body part using the extractor structure.
